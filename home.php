@@ -7,12 +7,6 @@ get_header();
     <?php wp_title() ?>
 </h1>
 
-<?php
-
-the_content();
-
-?>
-
 
 <div class="d-flex flex-wrap justify-content-center gap-5 w-75 w-md-75 m-auto my-5">
 

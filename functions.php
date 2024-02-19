@@ -30,7 +30,7 @@ add_action('init', 'the_menus');
 function custom_enqueue_styles()
 {
     wp_enqueue_style('bootstrap-style-link', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css');
-    wp_enqueue_style('custom-css', get_template_directory_uri() . "./style.css");
+    wp_enqueue_style('custom-css', get_template_directory_uri() . "/style.css");
     wp_enqueue_style('montserrat-font', 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 }
 ;
@@ -49,7 +49,7 @@ function register_meal_post_type()
 {
     $args = array(
         'public' => true,
-        'label' => 'meal',
+        'label' => 'Meals',
         'supports' => array('title', 'editor', 'thumbnail'),
     );
     register_post_type('meal', $args);

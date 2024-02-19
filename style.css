@@ -1,6 +1,12 @@
-html {
-    margin-top: 0%;
-}
+/*
+Theme Name: Home Chef v1
+Author: Dylan
+Description: Basic theme for Home chef
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Home chef text domain
+*/
 
 * {
     box-sizing: border-box;
@@ -14,11 +20,14 @@ html {
     background-color: blue;
 }
 
-.navigation-link a, li{
+.menu a, .menu li{
     text-decoration: none;
     list-style: none;
     color: black;
-    font-weight: 600;
+}
+
+.navbar.bg-transparent {
+    background-color: transparent !important;
 }
 
 .menu {
@@ -37,26 +46,43 @@ html {
     border-right: none;
 }
 
-.nav-shadow {
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-
 @media (max-width: 990px) {
     .menu {
         display: block;
     }
 
     .menu li {
-        padding: 0px 10%;
+        padding: 5% 10%;
         border-right: none;
         border-bottom: solid rgb(209, 209, 209) 2px;
         min-width: 100%;
     }
 
     .menu li:last-child {
-        padding: 0px 10%;
+        padding: 5% 10%;
         border-right: none;
         border-bottom: none;
         min-width: 100%;
     }
+}
+
+.custom-shape-divider-bottom-1708319073 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1708319073 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 186px;
+}
+
+.custom-shape-divider-bottom-1708319073 .shape-fill {
+    fill: #198754;
 }
