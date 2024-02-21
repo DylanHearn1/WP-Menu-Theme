@@ -8,6 +8,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: Home chef text domain
 */
 
+html {
+    scroll-padding: 15rem;
+}
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -15,35 +19,60 @@ Text Domain: Home chef text domain
     font-family: "Montserrat", sans-serif;
 }
 
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
 .home-page {
     min-height: 100dvh;
     background-color: blue;
 }
 
-.menu a, .menu li{
-    text-decoration: none;
-    list-style: none;
-    color: black;
-}
+/* TOP NAV LIST */
 
-.navbar.bg-transparent {
-    background-color: transparent !important;
-}
-
-.menu {
+#menu-top-nav-links {
     padding: 0px;
     display: flex;
     text-align: center;
-}
+}   
 
-.menu li {
+#menu-top-nav-links li {
     padding: 0px 10%;
     border-right: solid rgb(209, 209, 209) 2px;
     min-width: 100%;
+    list-style: none;
+
+    & a {
+        text-decoration: none;
+        list-style: none;
+        color: black;
+        font-weight: 600;
+    }
 }
 
-.menu li:last-child {
+#menu-top-nav-links li:last-child {
     border-right: none;
+}
+
+
+/* FOOTER NAV LIST */
+
+#menu-footer-nav {
+    display: block;
+    text-align: center;
+
+}
+
+#menu-footer-nav li {
+    color: white;
+    list-style: none;
+
+    & a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+    }
 }
 
 @media (max-width: 990px) {
@@ -66,6 +95,14 @@ Text Domain: Home chef text domain
     }
 }
 
+.footer-address {
+    list-style: none;
+
+    & li {
+        margin: 2% 0;
+    }
+}
+
 .custom-shape-divider-bottom-1708319073 {
     position: absolute;
     bottom: 0;
@@ -85,4 +122,23 @@ Text Domain: Home chef text domain
 
 .custom-shape-divider-bottom-1708319073 .shape-fill {
     fill: #198754;
+}
+
+.custom-shape-divider-bottom-1708495749 {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1708495749 svg {
+    position: relative;
+    display: block;
+    width: calc(117% + 1.3px);
+    height: 32px;
+}
+
+.custom-shape-divider-bottom-1708495749 .shape-fill {
+    fill: #000000;
 }

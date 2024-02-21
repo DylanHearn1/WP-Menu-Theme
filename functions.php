@@ -18,8 +18,7 @@ function the_menus()
 {
     $locations = array(
         'top-nav' => "Navigation on the top of page",
-        'front-page-nav' => "front page navigation",
-        'front-page-button' => "front page menu navigation"
+        'footer-nav' => "Navigation Footer (bottom)"
     );
 
     register_nav_menus($locations);
