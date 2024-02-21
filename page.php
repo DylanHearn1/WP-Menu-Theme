@@ -57,8 +57,8 @@ get_header();
                     $query->the_post();
                     ?>
 
-                    <article class="w-50 mb-5 px-5">
-                        <div class="d-flex justify-content-between mb-2">
+                    <article class="comment-article-single">
+                        <div class="comment-name-rating">
                             <strong>
                                 <?php the_title(); ?>
                             </strong>
@@ -82,7 +82,7 @@ get_header();
                 endwhile;
                 wp_reset_postdata();
             else:
-                echo 'No posts found.';
+                echo 'No comments found.';
             endif;
 
             ?>

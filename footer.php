@@ -7,8 +7,8 @@
 
 <footer>
     <div class="bg-black text-white">
-        <div class="w-75 m-auto d-flex align-items-center justify-content-between py-5">
-            <ul class="footer-address">
+        <div class="w-75 m-auto align-items-center justify-content-between py-5" id="footer-content">
+            <ul class="footer-address py-4">
                 <li class="fw-bold">Contact Us</li>
                 <li>123 Main Street, Cityville</li>
                 <li>Email: info@example.com</li>
@@ -23,7 +23,7 @@
                 )
             )
                 ?>
-            <p>
+            <p class="py-4">
                 Follow us @homechef
             </p>
         </div>
