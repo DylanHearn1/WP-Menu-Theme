@@ -20,37 +20,42 @@ get_header();
         </div>
     </div>
     <div class="about-container">
-        <div class="bg-success text-white rounded-5 p-5 my-5">
-            <strong class="fs-1">
-                <?php the_field("about_title_one"); ?>
-            </strong>
-            <div class="my-3">
-                <?php echo get_field('about_section_one') ?>
-            </div>
-        </div>
-        <div class="bg-success text-white rounded-5 p-5 mx-2 my-5">
-            <strong class="fs-1">
-                <?php the_field("about_title_two"); ?>
-            </strong>
-            <div class="my-3">
-                <?php echo get_field('about_section_two') ?>
-            </div>
-        </div>
-        <div class="bg-success text-white rounded-5 p-5 mx-2 my-5">
-            <strong class="fs-1">
-                <?php the_field("about_title_three"); ?>
-            </strong>
-            <div class="my-3">
-                <?php echo get_field('about_section_three') ?>
-            </div>
-        </div>
+
+        <?php
+
+        $args = array(
+            'post_type' => 'about',
+            'posts_per_page' => 10,
+        );
+
+        $about_query = new WP_Query($args);
+
+        if ($about_query->have_posts()) {
+            while ($about_query->have_posts()) {
+                $about_query->the_post();
+                ?>
+
+                <div class="bg-success text-white rounded-5 p-4 my-3" id="about-single">
+
+                    <strong>
+                        <?php the_title() ?>
+                    </strong>
+                    <?php
+                    the_content();
+                    ?>
+                </div>
+                <?php
+            }
+            wp_reset_postdata();
+        }
+        ?>
+
+
     </div>
 
 </section>
 
 
 <?php
-
-
 get_footer();
 ?>

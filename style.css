@@ -93,6 +93,16 @@ ul {
     display: flex;
 }
 
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#about-single {
+    width: 49%;
+}
+
 
 /* 990PX QUERY */
 

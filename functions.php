@@ -45,17 +45,24 @@ function custom_enqueue_scripts()
 add_action('wp_enqueue_scripts', 'custom_enqueue_scripts');
 
 
-function register_meal_post_type()
+function register_custom_post_type()
 {
-    $args = array(
+    $meal_args = array(
         'public' => true,
         'label' => 'Meals',
         'supports' => array('title', 'editor', 'thumbnail'),
     );
-    register_post_type('meal', $args);
+    register_post_type('meal', $meal_args);
+
+    $about_args = array(
+        'public' => true,
+        'label' => 'About Us',
+        'supports' => array('title', 'editor')
+    );
+    register_post_type('about', $about_args);
 }
 
-add_action('init', 'register_meal_post_type');
+add_action('init', 'register_custom_post_type');
 
 function remove_admin_login_header()
 {
