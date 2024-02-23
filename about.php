@@ -35,9 +35,9 @@ get_header();
                 $about_query->the_post();
                 ?>
 
-                <div class="bg-success text-white rounded-5 p-4 my-3" id="about-single">
+                <div class="border bg-success bg-opacity-10 border-success rounded-5 p-4 my-3 shadow" id="about-single">
 
-                    <strong>
+                    <strong class="py-5">
                         <?php the_title() ?>
                     </strong>
                     <?php

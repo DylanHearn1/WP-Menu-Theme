@@ -6,7 +6,7 @@ get_header();
 
 <div class="vh-100 justify-content-center d-flex align-items-center bg-success text-white">
     <strong class="fs-1">
-        <?php echo wp_title('', false) ?>
+        <?php echo wp_title('') ?>
     </strong>
     <div class="custom-shape-divider-bottom-1708503250">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

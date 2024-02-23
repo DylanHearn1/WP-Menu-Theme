@@ -103,6 +103,14 @@ ul {
     width: 49%;
 }
 
+#single-container {
+    flex-direction: row;
+}
+
+#single-image {
+    width: 25rem;
+}
+
 
 /* 990PX QUERY */
 
@@ -137,6 +145,14 @@ ul {
     .comment-name-rating {
         display: flex;
         flex-direction: column;
+    }
+
+    #single-container {
+        flex-direction: column;
+    }
+
+    #single-image {
+        width: 20rem;
     }
 }
 

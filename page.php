@@ -31,10 +31,10 @@ get_header();
             </div>
             <div>
                 <div class="d-flex mt-5"></div>
-                <a class="btn btn-success mb-3 me-3 fs-5 shadow">
+                <a class="btn btn-success mb-3 me-3 fs-5 shadow z-99">
                     <?php the_field('green_button_text') ?>
                 </a>
-                <a class="btn btn-light mb-3 fs-5 shadow" href="#comments">
+                <a class="btn btn-light mb-3 fs-5 shadow z-99" href="#comments">
                     <?php the_field('white_button_text') ?>
                 </a>
             </div>
