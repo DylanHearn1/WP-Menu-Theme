@@ -1,5 +1,5 @@
 <article>
-    <div class="w-75 m-auto">
+    <div class="w-75 m-auto fs-4">
         <div class="d-flex align-items-center justify-content-center mb-5 vh-100 gap-5" id="single-container">
             <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="rounded shadow my-5"
                 id="single-image">
@@ -20,9 +20,3 @@
     </div>
 
 </article>
-
-<?php
-
-comments_template();
-
-?>

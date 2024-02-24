@@ -20,7 +20,7 @@ get_header();
                     class="shape-fill"></path>
             </svg>
         </div>
-        <div class="d-flex justify-content-around align-items-center flex-wrap text-center">
+        <div class="d-flex justify-content-around align-items-center flex-wrap text-center z-3">
             <div class="fs-3">
                 <h1 class="fw-bold fs-1">
                     <?php the_title() ?>
@@ -31,7 +31,7 @@ get_header();
             </div>
             <div>
                 <div class="d-flex mt-5"></div>
-                <a class="btn btn-success mb-3 me-3 fs-5 shadow z-99">
+                <a class="btn btn-success mb-3 me-3 fs-5 shadow z-99" href="/menu">
                     <?php the_field('green_button_text') ?>
                 </a>
                 <a class="btn btn-light mb-3 fs-5 shadow z-99" href="#comments">

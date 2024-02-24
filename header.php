@@ -21,9 +21,9 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
             <div class="container-fluid w-75">
-                <a href="">
+                <a href="/">
                     <img src="<?php echo get_template_directory_uri() . "/images/logonew.png" ?>" style="width: 90px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

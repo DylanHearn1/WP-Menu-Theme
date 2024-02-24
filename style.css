@@ -100,17 +100,27 @@ ul {
 }
 
 #about-single {
-    width: 49%;
+    max-width: 100%;
 }
 
 #single-container {
     flex-direction: row;
+    display: flex;
 }
 
 #single-image {
     width: 25rem;
 }
 
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+#menu-title {
+    padding-top: 70px;
+}
 
 /* 990PX QUERY */
 
@@ -202,25 +212,4 @@ ul {
 
 .custom-shape-divider-bottom-1708495749 .shape-fill {
     fill: #000000;
-}
-
-.custom-shape-divider-bottom-1708503250 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1708503250 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 140px;
-}
-
-.custom-shape-divider-bottom-1708503250 .shape-fill {
-    fill: #ffffff;
 }

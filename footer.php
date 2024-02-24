@@ -11,7 +11,7 @@
             <ul class="footer-address py-4">
                 <li class="fw-bold">Contact Us</li>
                 <li>123 Main Street, Cityville</li>
-                <li>Email: info@example.com</li>
+                <li>Email: home@chef.com</li>
                 <li>Phone: +1 (555) 123-4567</li>
             </ul>
             <?php
