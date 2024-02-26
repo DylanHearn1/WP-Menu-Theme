@@ -174,27 +174,6 @@ header {
     }
 }
 
-.custom-shape-divider-bottom-1708319073 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1708319073 svg {
-    position: relative;
-    display: block;
-    width: calc(300% + 1.3px);
-    height: 186px;
-}
-
-.custom-shape-divider-bottom-1708319073 .shape-fill {
-    fill: #198754;
-}
-
 .custom-shape-divider-bottom-1708495749 {
     bottom: 0;
     left: 0;
