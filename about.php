@@ -10,8 +10,8 @@ get_header();
 
 ?>
 
-<section class="fs-4 w-75 m-auto mb-5">
-    <div class="text-center d-flex justify-content-center vh-100 align-items-center">
+<section class="fs-4">
+    <div class="text-center d-flex justify-content-center vh-100 align-items-center w-75 m-auto">
         <div>
             <strong class="fs-1">
                 <?php the_title(); ?>
@@ -19,7 +19,7 @@ get_header();
             <?php the_content(); ?>
         </div>
     </div>
-    <div class="about-container">
+    <div class="about-container bg-success py-5">
 
         <?php
 
@@ -35,9 +35,9 @@ get_header();
                 $about_query->the_post();
                 ?>
 
-                <div class="border bg-success bg-opacity-10 border-success rounded-5 p-4 my-3 shadow" id="about-single">
+                <div class="border border-white rounded-3 p-4 my-4 shadow w-75 m-auto bg-white" id="about-single">
 
-                    <strong class="py-5">
+                    <strong>
                         <?php the_title() ?>
                     </strong>
                     <?php

@@ -12,7 +12,17 @@
         </div>
         <div class="mb-5">
             <h1 class="fw-bold">Directions</h1>
-            <?php the_field('directions') ?>
+            <ul>
+                <li>
+                    <?php the_field('step_1') ?>
+                </li>
+                <li>
+                    <?php the_field('step_2') ?>
+                </li>
+                <li>
+                    <?php the_field('step_3') ?>
+                </li>
+            </ul>
         </div>
 
 

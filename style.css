@@ -26,7 +26,6 @@ ul {
 
 .home-page {
     min-height: 100dvh;
-    background-color: blue;
 }
 
 /* TOP NAV LIST */
@@ -191,4 +190,25 @@ header {
 
 .custom-shape-divider-bottom-1708495749 .shape-fill {
     fill: #000000;
+}
+
+.custom-shape-divider-bottom-1708918003 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1708918003 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 98px;
+}
+
+.custom-shape-divider-bottom-1708918003 .shape-fill {
+    fill: #198754;
 }
